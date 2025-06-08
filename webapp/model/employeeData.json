@@ -1,0 +1,154 @@
+{
+  "employeeData": [
+    {
+      "id": 1,
+      "name": "Pacifique Ntwali",
+      "role": "SAP Developer",
+      "salary": 78000
+    },
+    {
+      "id": 2,
+      "name": "Aline Uwase",
+      "role": "Frontend Developer",
+      "salary": 65000
+    },
+    {
+      "id": 3,
+      "name": "Jean Claude Mucyo",
+      "role": "Backend Developer",
+      "salary": 72000
+    },
+    {
+      "id": 4,
+      "name": "Chantal Ingabire",
+      "role": "Full Stack Developer",
+      "salary": 80000
+    },
+    {
+      "id": 5,
+      "name": "Emmanuel Habimana",
+      "role": "DevOps Engineer",
+      "salary": 85000
+    },
+    {
+      "id": 6,
+      "name": "Solange Keza",
+      "role": "Mobile App Developer",
+      "salary": 70000
+    },
+    {
+      "id": 7,
+      "name": "Olivier Kwizera",
+      "role": "Software Architect",
+      "salary": 95000
+    },
+    {
+      "id": 8,
+      "name": "Marie Louise Iradukunda",
+      "role": "Financial Analyst",
+      "salary": 70000
+    },
+    {
+      "id": 9,
+      "name": "Thierry Mugisha",
+      "role": "Accountant",
+      "salary": 60000
+    },
+    {
+      "id": 10,
+      "name": "Grace Mahoro",
+      "role": "Finance Manager",
+      "salary": 90000
+    },
+    {
+      "id": 11,
+      "name": "Eric Ndayizeye",
+      "role": "Investment Analyst",
+      "salary": 75000
+    },
+    {
+      "id": 12,
+      "name": "Diane Uwamahoro",
+      "role": "Auditor",
+      "salary": 68000
+    },
+    {
+      "id": 13,
+      "name": "Patrick Shema",
+      "role": "Chief Financial Officer (CFO)",
+      "salary": 150000
+    },
+    {
+      "id": 14,
+      "name": "Claudine Mutesi",
+      "role": "Financial Controller",
+      "salary": 88000
+    },
+    {
+      "id": 15,
+      "name": "David Gasana",
+      "role": "HR Manager",
+      "salary": 82000
+    },
+    {
+      "id": 16,
+      "name": "Esther Kanyana",
+      "role": "HR Generalist",
+      "salary": 62000
+    },
+    {
+      "id": 17,
+      "name": "Innocent Nsengiyumva",
+      "role": "Talent Acquisition Specialist",
+      "salary": 73000
+    },
+    {
+      "id": 18,
+      "name": "Josiane Umutoni",
+      "role": "HR Coordinator",
+      "salary": 55000
+    },
+    {
+      "id": 19,
+      "name": "Fabrice Manzi",
+      "role": "Compensation and Benefits Manager",
+      "salary": 78000
+    },
+    {
+      "id": 20,
+      "name": "Sandrine Ishimwe",
+      "role": "HR Business Partner",
+      "salary": 88000
+    },
+    {
+      "id": 21,
+      "name": "Yves Gakwaya",
+      "role": "Chief Human Resources Officer (CHRO)",
+      "salary": 145000
+    },
+    {
+      "id": 22,
+      "name": "Liliane Akaliza",
+      "role": "Data Scientist (Developer)",
+      "salary": 83000
+    },
+    {
+      "id": 23,
+      "name": "Christian Cyusa",
+      "role": "Cloud Engineer",
+      "salary": 87000
+    },
+    {
+      "id": 24,
+      "name": "Noella Teta",
+      "role": "Payroll Specialist (Finance)",
+      "salary": 66000
+    },
+    {
+      "id": 25,
+      "name": "Aimable Ganza",
+      "role": "Employee Relations Manager (HR)",
+      "salary": 79000
+    }
+  ]
+}

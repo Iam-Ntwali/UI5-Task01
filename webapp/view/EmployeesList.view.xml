@@ -1,0 +1,89 @@
+<mvc:View
+    controllerName="ui5task01.controller.EmployeesList"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:semantic="sap.f.semantic"
+    xmlns:icon="sap.ui.core.Icon"
+>
+    <Page
+        id="employeePage"
+        title="OPENHUB IT Limited"
+    >
+    <customHeader>
+        <Bar>
+          <contentMiddle>
+            <Title text="OPENHUB IT Limited Employees 💼" level="H1" />
+          </contentMiddle>
+          <contentRight>
+            <SearchField
+              id="employeeSearchField"
+              width="300px"
+              placeholder="Search employees..."
+              search=".onFilterEmployees"
+            />
+          </contentRight>
+        </Bar>
+      </customHeader>
+
+
+        <content>
+            <Table
+                id="employeeTable"
+                items="{ path: 'EmployeeV2Model>/employeeData' }"
+                growing="true"
+                growingThreshold="10"
+                class="sapUiResponsiveMargin"
+                width="100%"
+                mode="None"
+                selectionChange=".onEmployeeSelect"
+                alternateRowColors="true"
+                busy="{EmployeeV2Model>/tableLoading}"
+                busyIndicatorDelay="0"
+            >
+                <columns>
+                    <Column width="10%">
+                        <header>
+                            <Text text="ID" />
+                        </header>
+                    </Column>
+                    <Column width="30%">
+                        <header>
+                            <Text text="Full Name" />
+                        </header>
+                    </Column>
+                    <Column width="30%">
+                        <header>
+                            <Text text="Role" />
+                        </header>
+                    </Column>
+                    <Column width="20%">
+                        <header>
+                            <Text text="Salary (USD)" />
+                        </header>
+                    </Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem
+                        type="Navigation"
+                        press=".onEmployeePress"
+                        class="sapUiTinyMarginBottom"
+                    >
+                        <cells>
+                            <Text text="EMP {EmployeeV2Model>id}" />
+                            <ObjectIdentifier title="{EmployeeV2Model>name}" />
+                            <Text text="{EmployeeV2Model>role}" />
+                            <ObjectNumber
+                                number="{
+                                    path: 'EmployeeV2Model>salary',
+                                    formatter: '.formatter.formatCurrency'
+                                }"
+                            />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

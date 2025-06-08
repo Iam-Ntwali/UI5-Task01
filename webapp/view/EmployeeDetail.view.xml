@@ -1,0 +1,30 @@
+<mvc:View
+  controllerName="ui5task01.controller.EmployeeDetail"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:f="sap.ui.layout.form"
+>
+  <Page
+    id="employeeDetailPage"
+    title="Employee Details"
+    showNavButton="true"
+    navButtonPress=".onNavBack"
+  >
+    <content>
+      <VBox class="sapUiSmallMargin sapUiResponsiveMargin">
+        <ObjectHeader
+          id="employeeDetailHeader"
+          title="{EmployeeV2Model>name}"
+          intro="{EmployeeV2Model>role}"
+          number="{
+            path: 'EmployeeV2Model>salary',
+            formatter: '.formatter.formatCurrency'
+          }"
+          numberUnit="USD"
+          icon="sap-icon://employee"
+          responsive="true"
+        />
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

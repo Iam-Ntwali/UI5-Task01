@@ -1,0 +1,17 @@
+<mvc:View
+    controllerName="ui5task01.controller.NotFound"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <IllustratedMessage
+        enableVerticalResponsiveness="true"
+        illustrationType="sap.m.IllustratedMessageType.PageNotFound"
+        title="{i18n>notFoundTitle}"
+        description="{i18n>notFoundText}">
+        <additionalContent>
+            <Button
+                class="sapUiSmallMarginTop"
+                text="{i18n>backToHome}"
+                press=".onNavBack" />
+        </additionalContent>
+    </IllustratedMessage>
+</mvc:View>

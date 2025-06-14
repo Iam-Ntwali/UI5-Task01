@@ -34,6 +34,7 @@
       "minUI5Version": "1.136.1",
       "libs": {
         "sap.m": {},
+        "sap.f": {},
         "sap.ui.core": {}
       }
     },
@@ -41,7 +42,9 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "ui5task01.i18n.i18n"
+          "bundleName": "ui5task01.i18n.i18n",
+          "supportedLocales": ["", "en", "fr"],
+          "fallbackLocale": "en"
         }
       },
       "EmployeeV2Model": {
@@ -56,7 +59,10 @@
         "viewPath": "ui5task01.view",
         "controlId": "app",
         "controlAggregation": "pages",
-        "async": true
+        "async": true,
+        "bypassed": {
+          "target": "notFound"
+        }
       },
       "routes": [
         {
@@ -80,6 +86,11 @@
           "viewName": "EmployeeDetail",
           "viewId": "EmployeeDetail",
           "viewLevel": 2
+        },
+        "notFound": {
+          "viewName": "NotFound",
+          "viewId": "notFound",
+          "transition": "show"
         }
       }
     }

@@ -1,65 +1,103 @@
 <mvc:View
     controllerName="ui5task01.controller.EmployeesList"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns:core="sap.ui.core"
+    displayBlock="true"
     xmlns="sap.m"
-    xmlns:semantic="sap.f.semantic"
-    xmlns:icon="sap.ui.core.Icon"
->
-    <Page
-        id="employeePage"
-        title="OPENHUB IT Limited"
-    >
-    <customHeader>
-        <Bar>
-          <contentMiddle>
-            <Title text="OPENHUB IT Limited Employees 💼" level="H1" />
-          </contentMiddle>
-          <contentRight>
-            <SearchField
-              id="employeeSearchField"
-              width="300px"
-              placeholder="Search employees..."
-              search=".onFilterEmployees"
-            />
-          </contentRight>
-        </Bar>
-      </customHeader>
+    xmlns:f="sap.f"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core">
 
+    <f:DynamicPage id="employeeListPage" toggleHeaderOnTitleClick="false" fitContent="true">
+        <f:title>
+            <f:DynamicPageTitle>
+                <f:breadcrumbs>
+                    <Breadcrumbs>
+                        <Link text="{i18n>employeePageTitle}" />
+                    </Breadcrumbs>
+                </f:breadcrumbs>
+                <f:heading>
+                    <Title text="{i18n>employeeTableTitle}" />
+                </f:heading>
+                <f:actions>
+                    <Button
+                        icon="sap-icon://add"
+                        text="{i18n>addEmployee}"
+                        type="Emphasized"
+                        press=".onAddEmployee" />
+                    <Button
+                        icon="sap-icon://refresh"
+                        tooltip="Refresh"
+                        press=".onRefresh" />
+                </f:actions>
+            </f:DynamicPageTitle>
+        </f:title>
 
-        <content>
+        <f:header>
+            <f:DynamicPageHeader pinnable="true">
+                <VBox class="sapUiSmallMargin">
+                    <HBox alignItems="Center" justifyContent="SpaceBetween">
+                        <HBox>
+                            <HBox class="sapUiSmallMarginTop">
+                                <VBox class="sapUiMediumMarginEnd">
+                                    <Text text="{i18n>totalEmployees}" class="sapUiTinyText" />
+                                    <ObjectNumber
+                                        number="{path: 'EmployeeV2Model>/employeeData', formatter: '.formatter.formatEmployeeCount'}"
+                                        emphasized="true" />
+                                </VBox>
+                                <VBox class="sapUiMediumMarginEnd">
+                                    <Text text="{i18n>departments}" class="sapUiTinyText" />
+                                    <ObjectNumber number="4" state="Information" />
+                                </VBox>
+                            </HBox>
+                        </HBox>
+                        <SearchField
+                            id="employeeSearchField"
+                            width="20rem"
+                            placeholder="{i18n>searchPlaceholder}"
+                            liveChange=".onFilterEmployees" />
+
+                    </HBox>
+                    <!-- Quick Stats -->
+
+                </VBox>
+            </f:DynamicPageHeader>
+        </f:header>
+
+        <f:content>
             <Table
                 id="employeeTable"
-                items="{ path: 'EmployeeV2Model>/employeeData' }"
+                items="{path: 'EmployeeV2Model>/employeeData'}"
                 growing="true"
                 growingThreshold="10"
                 class="sapUiResponsiveMargin"
-                width="100%"
+                width="auto"
                 mode="None"
-                selectionChange=".onEmployeeSelect"
-                alternateRowColors="true"
                 busy="{EmployeeV2Model>/tableLoading}"
-                busyIndicatorDelay="0"
-            >
+                busyIndicatorDelay="0">
+
                 <columns>
-                    <Column width="10%">
+                    <Column width="2rem">
                         <header>
-                            <Text text="ID" />
+                            <Text text="{i18n>idColumn}" />
                         </header>
                     </Column>
-                    <Column width="30%">
+                    <Column>
                         <header>
-                            <Text text="Full Name" />
+                            <Text text="{i18n>fullNameColumn}" />
                         </header>
                     </Column>
-                    <Column width="30%">
+                    <Column minScreenWidth="Tablet">
                         <header>
-                            <Text text="Role" />
+                            <Text text="{i18n>emailColumn}" />
                         </header>
                     </Column>
-                    <Column width="20%">
+                    <Column minScreenWidth="Tablet">
                         <header>
-                            <Text text="Salary (USD)" />
+                            <Text text="{i18n>roleColumn}" />
+                        </header>
+                    </Column>
+                    <Column hAlign="End">
+                        <header>
+                            <Text text="{i18n>salaryColumn}" />
                         </header>
                     </Column>
                 </columns>
@@ -68,22 +106,31 @@
                     <ColumnListItem
                         type="Navigation"
                         press=".onEmployeePress"
-                        class="sapUiTinyMarginBottom"
-                    >
+                        highlight="Information">
                         <cells>
-                            <Text text="EMP {EmployeeV2Model>id}" />
-                            <ObjectIdentifier title="{EmployeeV2Model>name}" />
-                            <Text text="{EmployeeV2Model>role}" />
+                            <Text text="{EmployeeV2Model>id}" />
+                            <Text text="{EmployeeV2Model>name}" />
+                            <Link text="{EmployeeV2Model>email}"
+                                href="mailto:{EmployeeV2Model>email}" />
+                            <HBox alignItems="Center">
+                                <core:Icon
+                                    src="{
+                                        path: 'EmployeeV2Model>department',
+                                        formatter: '.formatter.formatDepartmentIcon'
+                                    }"
+                                    class="sapUiTinyMarginEnd" />
+                                <Text text="{EmployeeV2Model>role}" />
+                            </HBox>
                             <ObjectNumber
                                 number="{
                                     path: 'EmployeeV2Model>salary',
                                     formatter: '.formatter.formatCurrency'
                                 }"
-                            />
+                                state="Success" />
                         </cells>
                     </ColumnListItem>
                 </items>
             </Table>
-        </content>
-    </Page>
+        </f:content>
+    </f:DynamicPage>
 </mvc:View>

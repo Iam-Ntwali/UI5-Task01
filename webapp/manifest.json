@@ -1,0 +1,98 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "ui5task01",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}"
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "rootView": {
+      "viewName": "ui5task01.view.App",
+      "type": "XML",
+      "id": "app",
+      "async": true
+    },
+    "dependencies": {
+      "minUI5Version": "1.136.1",
+      "libs": {
+        "sap.m": {},
+        "sap.f": {},
+        "sap.ui.core": {}
+      }
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "ui5task01.i18n.i18n",
+          "supportedLocales": ["", "en", "fr"],
+          "fallbackLocale": "en"
+        }
+      },
+      "EmployeeV2Model": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/employeeData.json"
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "ui5task01.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "async": true,
+        "bypassed": {
+          "target": "notFound"
+        }
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "EmployeesList",
+          "target": "EmployeesList"
+        },
+        {
+          "pattern": "employee/{employeeId}",
+          "name": "EmployeeDetail",
+          "target": "EmployeeDetail"
+        }
+      ],
+      "targets": {
+        "EmployeesList": {
+          "viewName": "EmployeesList",
+          "viewId": "EmployeesList",
+          "viewLevel": 1
+        },
+        "EmployeeDetail": {
+          "viewName": "EmployeeDetail",
+          "viewId": "EmployeeDetail",
+          "viewLevel": 2
+        },
+        "notFound": {
+          "viewName": "NotFound",
+          "viewId": "notFound",
+          "transition": "show"
+        }
+      }
+    }
+  }
+}

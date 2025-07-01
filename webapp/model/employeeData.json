@@ -1,0 +1,229 @@
+{
+  "employeeData": [
+    {
+      "id": 1,
+      "name": "Pacifique Ntwali",
+      "role": "SAP Developer",
+      "department": "IT",
+      "email": "pacifique.ntwali@openhub.com",
+      "phone": "+250-788-123-456",
+      "salary": 78000
+    },
+    {
+      "id": 2,
+      "name": "Marie Louise Iradukunda",
+      "role": "Financial Analyst",
+      "department": "Finance",
+      "email": "ml.iradukunda@openhub.com",
+      "phone": "+250-788-890-123",
+      "salary": 70000
+    },
+    {
+      "id": 3,
+      "name": "David Gasana",
+      "role": "HR Manager",
+      "department": "Human Resources",
+      "email": "david.gasana@openhub.com",
+      "phone": "+250-785-556-677",
+      "salary": 82000
+    },
+    {
+      "id": 4,
+      "name": "Aline Uwase",
+      "role": "Frontend Developer",
+      "department": "IT",
+      "email": "aline.uwase@openhub.com",
+      "phone": "+250-788-234-567",
+      "salary": 65000
+    },
+    {
+      "id": 5,
+      "name": "Patrick Shema",
+      "role": "Chief Financial Officer (CFO)",
+      "department": "Management",
+      "email": "patrick.shema@openhub.com",
+      "phone": "+250-783-334-455",
+      "salary": 150000
+    },
+    {
+      "id": 6,
+      "name": "Thierry Mugisha",
+      "role": "Accountant",
+      "department": "Finance",
+      "email": "thierry.mugisha@openhub.com",
+      "phone": "+250-788-901-234",
+      "salary": 60000
+    },
+    {
+      "id": 7,
+      "name": "Jean Claude Mucyo",
+      "role": "Backend Developer",
+      "department": "IT",
+      "email": "jc.mucyo@openhub.com",
+      "phone": "+250-788-345-678",
+      "salary": 72000
+    },
+    {
+      "id": 8,
+      "name": "Esther Kanyana",
+      "role": "HR Generalist",
+      "department": "Human Resources",
+      "email": "esther.kanyana@openhub.com",
+      "phone": "+250-786-667-788",
+      "salary": 62000
+    },
+    {
+      "id": 9,
+      "name": "Grace Mahoro",
+      "role": "Finance Manager",
+      "department": "Finance",
+      "email": "grace.mahoro@openhub.com",
+      "phone": "+250-789-012-345",
+      "salary": 90000
+    },
+    {
+      "id": 10,
+      "name": "Chantal Ingabire",
+      "role": "Full Stack Developer",
+      "department": "IT",
+      "email": "chantal.ingabire@openhub.com",
+      "phone": "+250-788-456-789",
+      "salary": 80000
+    },
+    {
+      "id": 11,
+      "name": "Emmanuel Habimana",
+      "role": "DevOps Engineer",
+      "department": "IT",
+      "email": "emmanuel.habimana@openhub.com",
+      "phone": "+250-788-567-890",
+      "salary": 85000
+    },
+    {
+      "id": 12,
+      "name": "Innocent Nsengiyumva",
+      "role": "Talent Acquisition Specialist",
+      "department": "Human Resources",
+      "email": "innocent.n@openhub.com",
+      "phone": "+250-787-778-899",
+      "salary": 73000
+    },
+    {
+      "id": 13,
+      "name": "Eric Ndayizeye",
+      "role": "Investment Analyst",
+      "department": "Finance",
+      "email": "eric.ndayizeye@openhub.com",
+      "phone": "+250-781-112-233",
+      "salary": 75000
+    },
+    {
+      "id": 14,
+      "name": "Solange Keza",
+      "role": "Mobile App Developer",
+      "department": "IT",
+      "email": "solange.keza@openhub.com",
+      "phone": "+250-788-678-901",
+      "salary": 70000
+    },
+    {
+      "id": 15,
+      "name": "Josiane Umutoni",
+      "role": "HR Coordinator",
+      "department": "Human Resources",
+      "email": "josiane.umutoni@openhub.com",
+      "phone": "+250-788-889-900",
+      "salary": 55000
+    },
+    {
+      "id": 16,
+      "name": "Diane Uwamahoro",
+      "role": "Auditor",
+      "department": "Finance",
+      "email": "diane.uwamahoro@openhub.com",
+      "phone": "+250-782-223-344",
+      "salary": 68000
+    },
+    {
+      "id": 17,
+      "name": "Olivier Kwizera",
+      "role": "Software Architect",
+      "department": "IT",
+      "email": "olivier.kwizera@openhub.com",
+      "phone": "+250-788-789-012",
+      "salary": 95000
+    },
+    {
+      "id": 18,
+      "name": "Fabrice Manzi",
+      "role": "Compensation and Benefits Manager",
+      "department": "Human Resources",
+      "email": "fabrice.manzi@openhub.com",
+      "phone": "+250-789-990-011",
+      "salary": 78000
+    },
+    {
+      "id": 19,
+      "name": "Yves Gakwaya",
+      "role": "Chief Human Resources Officer (CHRO)",
+      "department": "Management",
+      "email": "yves.gakwaya@openhub.com",
+      "phone": "+250-781-112-233",
+      "salary": 145000
+    },
+    {
+      "id": 20,
+      "name": "Claudine Mutesi",
+      "role": "Financial Controller",
+      "department": "Finance",
+      "email": "claudine.mutesi@openhub.com",
+      "phone": "+250-784-445-566",
+      "salary": 88000
+    },
+    {
+      "id": 21,
+      "name": "Liliane Akaliza",
+      "role": "Data Scientist (Developer)",
+      "department": "IT",
+      "email": "liliane.akaliza@openhub.com",
+      "phone": "+250-782-223-344",
+      "salary": 83000
+    },
+    {
+      "id": 22,
+      "name": "Sandrine Ishimwe",
+      "role": "HR Business Partner",
+      "department": "Human Resources",
+      "email": "sandrine.ishimwe@openhub.com",
+      "phone": "+250-780-001-122",
+      "salary": 88000
+    },
+    {
+      "id": 23,
+      "name": "Noella Teta",
+      "role": "Payroll Specialist (Finance)",
+      "department": "Finance",
+      "email": "noella.teta@openhub.com",
+      "phone": "+250-784-445-566",
+      "salary": 66000
+    },
+    {
+      "id": 24,
+      "name": "Christian Cyusa",
+      "role": "Cloud Engineer",
+      "department": "IT",
+      "email": "christian.cyusa@openhub.com",
+      "phone": "+250-783-334-455",
+      "salary": 87000
+    },
+    {
+      "id": 25,
+      "name": "Aimable Ganza",
+      "role": "Employee Relations Manager (HR)",
+      "department": "Human Resources",
+      "email": "aimable.ganza@openhub.com",
+      "phone": "+250-785-556-677",
+      "salary": 79000
+    }
+  ]
+}
